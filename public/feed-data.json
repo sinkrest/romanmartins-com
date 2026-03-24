@@ -1,92 +1,92 @@
 {
-  "lastUpdated": "2026-03-23T10:00:00Z",
+  "lastUpdated": "2026-03-24T07:00:00Z",
   "claudeCode": {
-    "summary": "The --channels preview (v2.1.80-81) opens a new surface for mobile-first agent interaction — but it's raw and undocumented. Skills ecosystem is heating up (Sahil Lavingia open-sourced his), yet there's no discovery or quality layer. Memory optimisations (~100MB saved) signal scaling pain that's been quietly accumulating.",
+    "summary": "The productivity debate is peaking — HN threads from 60-year-olds rediscovering passion to 'Great Productivity Panic' essays. Meanwhile, the 1M context window has a documented reliability gap (works to ~256K, degrades after), and rate limits remain the #1 daily friction. The real product opportunity: persistent task management across sessions doesn't exist yet.",
     "items": [
       {
-        "title": "Skills ecosystem has no discovery or curation layer",
-        "source": "Hacker News",
-        "url": "https://github.com/slavingia/skills",
-        "date": "2026-03-23",
-        "type": "gap",
-        "snippet": "Sahil Lavingia open-sourced his Claude Code skills. Multiple Show HN posts sharing personal skills. Growing ecosystem with no marketplace, no ratings, no search. Opportunity: a skills directory with quality signals would own the distribution layer."
-      },
-      {
-        "title": "--channels is powerful but has no UX for non-developers",
+        "title": "1M context window doesn't deliver what's advertised",
         "source": "GitHub",
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.81",
-        "date": "2026-03-20",
-        "type": "emerging",
-        "snippet": "MCP servers can now push messages into sessions and relay tool approvals to your phone. Massive potential for mobile-first AI workflows — but requires technical setup. Opportunity: a no-code channels configurator or mobile companion app."
-      },
-      {
-        "title": "Productivity patterns are tribal knowledge, not product",
-        "source": "Hacker News",
-        "url": "https://neilkakkar.com/productive-with-claude-code.html",
-        "date": "2026-03-23",
-        "type": "gap",
-        "snippet": "Blog post on Claude Code productivity patterns hit 19 points. Users are figuring out workflows individually through blog posts and HN threads. Opportunity: onboarding flows or guided templates that encode best practices into the product."
-      },
-      {
-        "title": "Large repo performance still a pain point despite optimisations",
-        "source": "GitHub",
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.80",
-        "date": "2026-03-19",
+        "url": "https://github.com/anthropics/claude-code/issues/35296",
+        "date": "2026-03-17",
         "type": "pain",
-        "snippet": "Two consecutive releases cut ~100MB of startup memory. This was worth shipping twice = significant user complaints. Opportunity: repo-aware context management — smart indexing so the tool doesn't need to load everything upfront."
+        "snippet": "Bug report with measurable data: 1M-token context advertised, but reliable performance degrades past ~200-256K tokens. Gap between marketing and product. Opportunity: tiered context strategies — smart chunking and retrieval rather than brute-force window size."
       },
       {
-        "title": "Multi-agent orchestration emerging from the community",
+        "title": "Persistent task management is a missing product layer",
         "source": "Hacker News",
-        "url": "https://github.com/tessron/claude-code-skills/tree/main/inter-agent-chat",
+        "url": "https://news.ycombinator.com/item?id=47494890",
         "date": "2026-03-23",
-        "type": "emerging",
-        "snippet": "Show HN: agents chatting by typing in each other's terminals. Plus 'Outworked' — an office UI for Claude Code agents. Users want multi-agent workflows but are building them with duct tape. Opportunity: first-party multi-agent orchestration."
+        "type": "gap",
+        "snippet": "TodoWrite disappears when sessions end. No persistent backlog, no cross-session continuity. Users build workarounds with files and scripts. Opportunity: a durable task layer that survives sessions would unlock true multi-day agentic workflows."
+      },
+      {
+        "title": "The Great Productivity Panic — metrics vs meaning debate",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=47467922",
+        "date": "2026-03-23",
+        "type": "shift",
+        "snippet": "Are 10x productivity claims real or are developers measuring wrong? Mental exhaustion after 3-hour agentic sessions vs 10-hour flow states. Opportunity: developer wellbeing metrics — session length, cognitive load, intervention frequency — as product signals."
+      },
+      {
+        "title": "Rate limits are the daily ceiling nobody planned for",
+        "source": "Medium",
+        "url": "https://medium.com/@william.couturier/claude-code-in-march-2026-the-economics-of-the-quota-792449b63edb",
+        "date": "2026-03-22",
+        "type": "pain",
+        "snippet": "Claude Code and claude.ai share the same token pool. Afternoon coding shrinks after morning chat sessions. $200/month may cost $5K in compute. Opportunity: usage-aware rate allocation — separate pools, predictive budgeting, or cost visibility per session."
+      },
+      {
+        "title": "claude:ignore directive — granular context control still missing",
+        "source": "GitHub",
+        "url": "https://github.com/anthropics/claude-code/issues/35926",
+        "date": "2026-03-16",
+        "type": "gap",
+        "snippet": "Feature request for inline file-level ignore directives. .claudeignore exists but is coarse-grained. Users need per-file, per-section control over what enters context. Opportunity: a context budget UI that shows what's loaded, what's costing tokens, and lets you prune."
       }
     ]
   },
   "openClaw": {
-    "summary": "The 384-point security audit is an existential product problem — 7.1% of skills have critical flaws and OAuth tokens sit unencrypted. Architecture is elegant but the trust layer is missing. Meanwhile, competitors like NemoClaw and a 10MB Go alternative are emerging, signalling the ecosystem is fragmenting before it's mature.",
+    "summary": "Security is now an existential crisis — 'security nightmare' is trending on HN with 30+ CVEs in 2026 alone and 800+ malicious skills found in ClawHub. The v2026.3.22 release drops 30 security patches and introduces ClawHub as the default store, but trust is bleeding faster than patches can fix. Meanwhile, the architecture is being commoditised (10MB Go alternatives) — the moat is the ecosystem, not the code.",
     "items": [
       {
-        "title": "Security trust layer is completely absent",
+        "title": "Security nightmare narrative is becoming consensus",
         "source": "Hacker News",
-        "url": "https://composio.dev/content/openclaw-security-and-vulnerabilities",
-        "date": "2026-03-22",
+        "url": "https://news.ycombinator.com/item?id=47479962",
+        "date": "2026-03-24",
         "type": "pain",
-        "snippet": "384-point HN post. 7.1% of 3,984 skills expose credentials. Unencrypted OAuth tokens. Prompt injection across messaging inputs. Opportunity: a verified skills marketplace with sandboxing and credential vaulting would be the #1 trust differentiator."
+        "snippet": "Two HN front-page posts in 24 hours: 'security nightmare' + 'is it really?' — 30+ CVEs this year including RCE, SSRF, privilege escalation. 40K exposed instances. 800+ malicious skills. Opportunity: security-as-a-service layer for OpenClaw — scan, sandbox, and certify skills before install."
       },
       {
-        "title": "Memory system being designed in the open — context vs knowledge split",
-        "source": "Hacker News",
-        "url": "https://db0.ai/blog/designing-openclaw-memory",
-        "date": "2026-03-23",
-        "type": "emerging",
-        "snippet": "New memory plugin separates context engineering from knowledge lifecycle. Introduces memory typing and structured extraction. Opportunity: whoever solves persistent agent memory with accuracy guarantees wins the long-running agent use case."
-      },
-      {
-        "title": "Ecosystem fragmenting — 10MB Go alternative already supports full skills",
-        "source": "Hacker News",
-        "url": "https://github.com/General-Specialist/capabot",
-        "date": "2026-03-23",
-        "type": "shift",
-        "snippet": "Capabot reimplements OpenClaw in Go at 10MB with full Clawhub skills compatibility. Users want the ecosystem without the bloat. Opportunity: lightweight runtimes that are plugin-compatible could commoditise the agent layer — the value shifts to the skills marketplace."
-      },
-      {
-        "title": "NemoClaw comparison reveals positioning gap",
-        "source": "Hacker News",
-        "url": "https://blog.alcazarsec.com/tech/posts/openclaw-vs-nemoclaw",
-        "date": "2026-03-23",
-        "type": "shift",
-        "snippet": "Head-to-head with NVIDIA's NemoClaw. OpenClaw wins on plugin breadth, NemoClaw on enterprise trust. Opportunity: OpenClaw needs a clear enterprise story — or it becomes the hobbyist default while NemoClaw takes the budget."
-      },
-      {
-        "title": "Core architecture is simple — but no one knows that",
-        "source": "Hacker News",
-        "url": "https://contextbento.substack.com/p/openclaw-high-level-architecture",
+        "title": "ClawHub is live but has no trust signals",
+        "source": "GitHub",
+        "url": "https://github.com/openclaw/openclaw/releases",
         "date": "2026-03-23",
         "type": "gap",
-        "snippet": "Architecture review shows 5 core components, buildable in a weekend. 7 points on HN = high interest. Opportunity: better developer onboarding and architecture docs would accelerate contributor growth — the project's moat is community, not complexity."
+        "snippet": "v2026.3.22 makes ClawHub the default plugin store. But no ratings, no verified publishers, no security badges. 7.1% of existing skills expose credentials. Opportunity: a curated, audited skills marketplace with trust tiers would own the distribution layer."
+      },
+      {
+        "title": "ContextEngine plugin API opens the memory wars",
+        "source": "GitHub",
+        "url": "https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md",
+        "date": "2026-03-08",
+        "type": "emerging",
+        "snippet": "New ContextEngine slot with full lifecycle hooks lets plugins replace core context management. Memory typing and structured extraction being designed in the open. Opportunity: whoever solves persistent, accurate agent memory across sessions wins the long-running agent use case."
+      },
+      {
+        "title": "OpenAI acquisition of founder signals platform risk",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=47027907",
+        "date": "2026-02-14",
+        "type": "shift",
+        "snippet": "Peter Steinberger joined OpenAI, project moved to a foundation. Community debating governance and long-term direction. Opportunity: governance uncertainty creates a window for forks or competitors to capture developers who want stability."
+      },
+      {
+        "title": "Lightweight alternatives commoditising the runtime",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=47237069",
+        "date": "2026-03-21",
+        "type": "shift",
+        "snippet": "Capabot (10MB Go) and NemoClaw (NVIDIA) both running OpenClaw-compatible skills. The agent runtime is being commoditised. Opportunity: value is shifting from runtime to ecosystem — skills marketplace, integrations catalogue, and enterprise trust layer are the real moats."
       }
     ]
   }

@@ -16,6 +16,7 @@ export default function Navigation() {
     { label: 'About', href: '#about' },
     { label: 'Work', href: '#work' },
     { label: 'The Wire', href: '/feed' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '#contact' },
   ]
 
@@ -49,6 +50,14 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://sinkrest.github.io/romans-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm px-4 py-1.5 rounded-lg bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/30 hover:border-indigo-500/50 text-indigo-300 hover:text-indigo-200 transition-all duration-200"
+          >
+            Roman's Lab
+          </a>
           <a
             href="https://www.linkedin.com/in/romanmartins"
             target="_blank"
@@ -86,6 +95,14 @@ export default function Navigation() {
               {link.label}
             </a>
           ))}
+          <a
+            href="https://sinkrest.github.io/romans-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+          >
+            Roman's Lab
+          </a>
           <a
             href="https://www.linkedin.com/in/romanmartins"
             target="_blank"

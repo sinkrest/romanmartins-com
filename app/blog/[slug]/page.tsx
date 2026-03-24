@@ -26,7 +26,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     <main className="min-h-screen bg-[var(--bg)]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#080810]/90 backdrop-blur-md border-b border-white/[0.06]">
-        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
               <span className="text-white text-xs font-bold">R</span>

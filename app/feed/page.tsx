@@ -129,22 +129,15 @@ export default function FeedPage() {
       {/* Nav bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#080810]/90 backdrop-blur-md border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <span className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-xs font-bold shadow-lg group-hover:shadow-indigo-500/30 transition-all">
-              R
-            </span>
-            <span className="text-sm font-medium text-white/80 group-hover:text-white transition-colors">
-              Roman Martins
-            </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+              <span className="text-white text-xs font-bold">R</span>
+            </div>
+            <span className="text-sm text-white/50 group-hover:text-white/70 transition-colors">romanmartins.com</span>
           </Link>
-          <div className="flex items-center gap-8">
-            <Link href="/" className="text-sm text-white/50 hover:text-white transition-colors duration-200">
-              Home
-            </Link>
-            <span className="text-sm text-white transition-colors duration-200">
-              The Wire
-            </span>
-          </div>
+          <Link href="/" className="text-sm text-white/40 hover:text-white/70 transition-colors">
+            ← Back
+          </Link>
         </div>
       </nav>
 

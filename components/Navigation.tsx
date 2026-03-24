@@ -15,11 +15,13 @@ export default function Navigation() {
   const links = [
     { label: 'About', href: '#about' },
     { label: 'Work', href: '#work' },
+    { label: 'Contact', href: '#contact' },
     { label: 'The Wire', href: '/feed' },
     { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '#contact' },
     { label: "Roman's Lab", href: 'https://sinkrest.github.io/romans-lab' },
   ]
+
+  const isExternal = (href: string) => !href.startsWith('#')
 
   return (
     <nav
@@ -50,6 +52,7 @@ export default function Navigation() {
               className="text-sm text-white/50 hover:text-white transition-colors duration-200"
             >
               {link.label}
+              {isExternal(link.href) && <span className="ml-0.5 text-[10px] opacity-40">↗</span>}
             </a>
           ))}
           <a
@@ -88,6 +91,7 @@ export default function Navigation() {
               className="text-sm text-white/60 hover:text-white transition-colors"
             >
               {link.label}
+              {isExternal(link.href) && <span className="ml-0.5 text-[10px] opacity-40">↗</span>}
             </a>
           ))}
           <a

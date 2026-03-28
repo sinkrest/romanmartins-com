@@ -77,6 +77,12 @@ const heroProjects = [
 
 const alsoBuilt = [
   {
+    title: 'Downtime Cost Calculator',
+    description: 'Input revenue and incident data — get cost-per-minute of downtime, annual risk exposure, and monitoring ROI breakdown with AI executive insight.',
+    link: 'https://uptime-calculator-lime.vercel.app',
+    github: 'https://github.com/sinkrest/uptime-calculator',
+  },
+  {
     title: 'Opportunity Scanner',
     description: 'Ranked map of opportunities — Quick Wins vs Strategic Bets, with effort, impact, and tool recommendations.',
     link: 'https://ai-opportunity-scanner.vercel.app',
@@ -211,7 +217,7 @@ export default function Portfolio() {
                     Roman&apos;s Lab
                   </h3>
                   <span className="text-xs font-mono text-indigo-400/70 bg-indigo-400/10 border border-indigo-400/20 rounded-full px-2.5 py-0.5">
-                    13+ tools
+                    12+ tools
                   </span>
                 </div>
                 <p className="text-white/40 text-sm max-w-lg">

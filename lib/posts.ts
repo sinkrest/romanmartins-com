@@ -9,6 +9,72 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: 'the-quiet-ones',
+    title: 'The Quiet Ones',
+    date: '2026-04-06',
+    readingTime: '5 min read',
+    excerpt: 'The people who best understand how AI works in the real world are the ones least likely to tell you about it. That\'s a problem. And an opportunity.',
+    content: `A few weeks ago I was on a call with a recruiter. She was filling an AI product role for a manufacturing company — the kind of company that makes real things, ships them in trucks, and measures quality in microns. She told me something that stuck.
+
+"We get two hundred applications from people with 'AI' in their LinkedIn headline. Most of them have never set foot on a production floor. The people we actually want — the ones who understand manufacturing AND can think about AI implementation — they don't apply. They don't even know we're looking for them."
+
+I knew exactly who she was talking about. I used to work with those people.
+
+---
+
+At LEGO, the people who ran the factory floor were not on LinkedIn. They were not building personal brands. They were not posting thought leadership about Industry 4.0. They were solving problems that most tech people don't know exist — problems like why a mould tool running at 210 degrees produces a part that's 0.03mm out of spec when the ambient humidity crosses 65%.
+
+These people had what I'd call deep operational intelligence. Not the kind you put on a slide deck. The kind that lives in your hands and your instincts. They understood systems — real, physical systems with feedback loops, failure modes, tolerances, and consequences. If something went wrong, a customer got a defective product. If something went really wrong, a machine hurt someone.
+
+That kind of knowledge doesn't translate well into a LinkedIn summary. "Managed injection moulding operations for 15 years" doesn't trend. It doesn't get reshared. It doesn't have a hook.
+
+But here's what's strange. That knowledge is now arguably the most valuable thing in AI.
+
+---
+
+Everyone in tech is talking about AI agents, autonomous systems, AI in production. But "production" in tech usually means a server somewhere processing requests. In manufacturing, production means a physical line running 24 hours, where a 30-second delay costs thousands of euros and a bad decision can shut down a factory for a week.
+
+The gap between what AI can theoretically do and what it can reliably do in a physical environment — that gap is enormous. And the people who understand that gap aren't the ones building AI models. They're the ones who've spent decades managing the environment where those models would need to work.
+
+I think about this a lot now that I've moved from the factory floor to AI product work. The skills that made someone a great manufacturing leader — systems thinking, tolerance for ambiguity, obsession with failure modes, the ability to optimise a process that has a hundred interacting variables — these are exactly the skills that AI implementation needs. Not prompt engineering. Not knowing which model has the best benchmark score. The ability to look at a system and ask: where does this break? What happens when it's wrong? How do we know?
+
+Manufacturing trained people to think that way for generations. And now the market is desperate for it — but looking in all the wrong places.
+
+---
+
+There's a deeper thing here about what "personal brand" means and who it was designed for.
+
+The entire concept of personal branding grew up in the knowledge economy. It rewards people who produce visible, shareable, digital output. Writers, designers, developers, marketers — people whose work lives on screens. The system is perfectly optimised for people who already speak the language of the internet.
+
+Manufacturing leaders don't. Their work lives in factories, in supply chains, in quality systems. Their output is a product on a shelf, not a post on a feed. They built their reputations through decades of consistent, quiet competence. In their world, the best compliment was that the line ran smoothly and nobody noticed.
+
+Now the market is telling them: you need to be visible. You need to articulate your value. You need to show up where the hiring managers are scrolling. And for most of them, that feels deeply uncomfortable. Not because they lack confidence — but because their entire career rewarded the opposite behaviour.
+
+The irony is sharp. The people most capable of solving AI's hardest implementation problems are the least visible in the market that's looking for them. They're not invisible because they have nothing to say. They're invisible because the system that surfaces talent was never built for how they work.
+
+---
+
+I'm not going to tell manufacturing leaders to start posting on LinkedIn. That advice is everywhere and it misses the point.
+
+What I will say is this: the market is shifting underneath you faster than it looks. Companies that used to hire "digital transformation" consultants are now hiring AI implementation leads. The job descriptions are new, but the problems are old — how do you integrate a new technology into an existing operation without breaking what works? How do you manage a system that's partially autonomous? How do you build trust in a tool that's probabilistic?
+
+You've been solving versions of these problems your entire career. You just called them something different.
+
+The question isn't whether you're qualified. You are — probably more than most people applying with "AI strategist" in their title. The question is whether you'll make yourself findable before the window closes. Because right now, the market is wide open for people who understand both the physical and the digital. That won't last. Eventually the AI-native generation will learn enough about operations to fill the gap from the other side.
+
+But right now, today, the quiet ones have an advantage that nobody else can fake: they actually know how things work.
+
+---
+
+I think the best personal brand isn't a brand at all. It's proof of work. It's building something that shows how you think, not just what you've done. A tool. A framework. A case study. Something someone can look at and immediately understand: this person knows what they're talking about.
+
+That's how it worked on the factory floor. You didn't tell people you were good. You showed them a part that ran at zero defects for six months. The evidence was the work.
+
+The material changed. The principle didn't. You don't need a brand. You need a body of work that speaks in a language the new market understands.
+
+The quiet ones have always known that. They just need to build where people can see.`
+  },
+  {
     slug: 'the-personal-os',
     title: 'The Personal OS',
     date: '2026-03-23',
@@ -64,7 +130,7 @@ If that sounds interesting, stick around.`
 
 Not for a client. Not for a portfolio. I just sat down one evening, opened a terminal, described what I wanted to an AI, and twenty minutes later I had a working snake game running in my browser. Green snake, red apples, score counter, game over screen. The whole thing.
 
-I showed it to my wife. She smiled, said "cool," and went back to her book. My daughter played it for three minutes, got bored, and asked for YouTube. Nobody cared.
+I showed it to my wife. She smiled, said "cool," and went back to do her own things. My kids couldnt care less. Nobody cared.
 
 And honestly — why would they? It's a snake game. The most basic game ever made. The original hello world of game development. Every CS student has built one. It's as remarkable as a paper airplane.
 
@@ -100,7 +166,7 @@ I keep thinking about the gap between what people imagine and what they can make
 
 Every major tool shift in human history has narrowed that gap. The printing press. The camera. The word processor. 3D printers. Each one took something that required deep specialisation and made it accessible to someone with the intent but not the training.
 
-AI is doing this for software. For digital creation broadly. And the snake game is my proof of concept — not because the game matters, but because the act of making it matters. A non-developer sat down and shipped a working piece of software in twenty minutes by describing what he wanted in plain language.
+AI is doing this for software. For digital creation broadly. And the snake game is my proof of concept - not because the game matters, but because the act of making it matters. A non-developer sat down and shipped a working piece of software in twenty minutes by describing what he wanted in plain language.
 
 Nobody around me noticed. My wife was kind. My daughter was bored. If I posted it online, no one would care. Another snake game in a world full of snake games.
 

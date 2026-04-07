@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 const roles = [
-  'Product Manager',
-  'Engineering Leader',
+  'AI Product Manager',
+  'Manufacturing × AI',
   'Builder',
   'Product Strategist',
 ]
@@ -64,7 +64,7 @@ export default function Hero() {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.8)]" />
               <span className="text-xs text-indigo-300/80 font-medium tracking-wide">
-                Product Manager · Builder · Maker
+                Manufacturing × AI · Product Builder
               </span>
             </div>
 
@@ -92,9 +92,10 @@ export default function Hero() {
               className="text-white/55 text-lg leading-relaxed mb-10 max-w-xl"
               style={{ animation: 'fadeUp 0.5s 0.3s ease forwards', opacity: 0 }}
             >
-              Engineer turned PM. I&apos;ve spent 10 years making complex things work —
-              from LEGO&apos;s manufacturing floors to products I built and shipped myself.
-              I write the spec and build the thing.
+              10 years inside manufacturing operations — LEGO, industrial equipment,
+              global teams. Now I build AI tools in production: Claude agents, prompt
+              architectures, shipped products. The rare bridge between factory-floor
+              reality and AI implementation.
             </p>
 
             {/* CTAs */}
@@ -135,6 +136,7 @@ export default function Hero() {
               {[
                 { value: '10+', label: 'Years engineering' },
                 { value: '4+', label: 'Years with AI' },
+                { value: '12+', label: 'AI tools built' },
                 { value: '1,000+', label: 'Books shipped' },
               ].map((stat) => (
                 <div key={stat.label}>
@@ -169,7 +171,7 @@ export default function Hero() {
               {/* Floating badge */}
               <div className="absolute -bottom-4 -right-4 glass-card rounded-xl px-4 py-3 shadow-xl">
                 <div className="text-xs text-white/50 mb-0.5">Currently building</div>
-                <div className="text-sm font-semibold text-white">tools that matter</div>
+                <div className="text-sm font-semibold text-white">AI for industry</div>
               </div>
             </div>
           </div>

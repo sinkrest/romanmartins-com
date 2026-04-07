@@ -59,12 +59,13 @@ export default function About() {
         <div className="mb-20">
           <p className="text-xs font-mono text-indigo-400/70 tracking-widest uppercase mb-3">About</p>
           <h2 className="text-4xl font-bold text-white mb-6">
-            Engineering background.<br />
-            <span className="gradient-text">Product instinct. Bias toward shipping.</span>
+            Manufacturing roots. AI hands.<br />
+            <span className="gradient-text">The bridge most AI PMs can&apos;t build.</span>
           </h2>
           <p className="text-white/50 text-lg max-w-2xl leading-relaxed">
-            Most PMs talk strategy. I&apos;ve spent a decade in engineering, built products from scratch,
-            and ship working software — not slide decks.
+            Most AI PMs come from software. I came from factories. 10 years engineering complex
+            industrial products, then 4 years building AI in production. That intersection is rare —
+            and it&apos;s where the hardest AI problems actually live.
           </p>
         </div>
 
@@ -115,9 +116,9 @@ export default function About() {
               <div className="space-y-4">
                 {[
                   {
-                    icon: '⚡',
-                    title: 'Technical credibility',
-                    desc: 'Engineers trust me. I understand the tradeoffs, the constraints, the cost of complexity.',
+                    icon: '🏭',
+                    title: 'Industrial credibility',
+                    desc: "I've shipped products that run on factory floors. I know what AI has to survive in the real world — not just demos.",
                   },
                   {
                     icon: '🤖',

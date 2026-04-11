@@ -136,7 +136,7 @@ export default function Hero() {
               {[
                 { value: '10+', label: 'Years engineering' },
                 { value: '4+', label: 'Years with AI' },
-                { value: '12+', label: 'AI tools built' },
+                { value: '15+', label: 'AI tools built' },
                 { value: '1,000+', label: 'Books shipped' },
               ].map((stat) => (
                 <div key={stat.label}>

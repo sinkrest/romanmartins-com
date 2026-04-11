@@ -217,7 +217,7 @@ export default function Portfolio() {
                     Roman&apos;s Lab
                   </h3>
                   <span className="text-xs font-mono text-indigo-400/70 bg-indigo-400/10 border border-indigo-400/20 rounded-full px-2.5 py-0.5">
-                    12+ tools
+                    15+ tools
                   </span>
                 </div>
                 <p className="text-white/40 text-sm max-w-lg">

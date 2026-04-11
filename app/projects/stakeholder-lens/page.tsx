@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Stakeholder Lens — Case Study | Roman Martins',
-  description: 'How I built an AI tool that translates a product roadmap into four audience-specific views — engineering, sales, exec, and customers — using parallel Claude API calls and distinct prompt architectures.',
+  title: 'Stakeholder Lens – Case Study | Roman Martins',
+  description: 'How I built an AI tool that translates a product roadmap into four audience-specific views – engineering, sales, exec, and customers – using parallel Claude API calls and distinct prompt architectures.',
 }
 
 export default function StakeholderLensCaseStudy() {
@@ -27,7 +27,7 @@ export default function StakeholderLensCaseStudy() {
         <header className="mb-16">
           <p className="text-xs font-mono text-indigo-400/70 tracking-widest uppercase mb-4">Case Study</p>
           <h1 className="text-4xl font-bold text-white mb-6 leading-tight">
-            Stakeholder Lens — AI Roadmap Translator
+            Stakeholder Lens – AI Roadmap Translator
           </h1>
 
           <div className="flex flex-wrap gap-6 text-sm text-white/40 mb-8">
@@ -75,7 +75,7 @@ export default function StakeholderLensCaseStudy() {
               alignment and risk flags. Customers want plain-language benefits and rough timing.
             </p>
             <p className="mt-4">
-              The underlying roadmap is the same. The translation work is manual, repetitive, and often inconsistent —
+              The underlying roadmap is the same. The translation work is manual, repetitive, and often inconsistent –
               each version drifts from the source in different ways. This is exactly the kind of structured, rule-based
               transformation that AI handles well.
             </p>
@@ -90,11 +90,11 @@ export default function StakeholderLensCaseStudy() {
             </p>
             <div className="mt-6 glass-card rounded-xl p-6 space-y-3">
               {[
-                { step: '01', text: 'User pastes a roadmap in any format — bullets, tables, free text' },
+                { step: '01', text: 'User pastes a roadmap in any format – bullets, tables, free text' },
                 { step: '02', text: 'User adds product context: name, target customer, stage, business priorities' },
                 { step: '03', text: 'User selects which audiences to generate for (Engineering, Sales, Exec, Customers)' },
                 { step: '04', text: 'Tool fires one Claude API call per audience in parallel using Promise.allSettled' },
-                { step: '05', text: 'Each view streams into its own card — colour-coded, copyable, immediately usable' },
+                { step: '05', text: 'Each view streams into its own card – colour-coded, copyable, immediately usable' },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-3">
                   <span className="text-xs font-mono text-indigo-400/60 mt-0.5 shrink-0">{item.step}</span>
@@ -115,7 +115,7 @@ export default function StakeholderLensCaseStudy() {
               {[
                 {
                   label: 'Shared system prompt',
-                  detail: 'Sets the overall context: product name, target customer, stage, and business priorities. Also establishes the core rule — never invent features or outcomes not present in the roadmap. Every view must be grounded in what\'s actually there.',
+                  detail: 'Sets the overall context: product name, target customer, stage, and business priorities. Also establishes the core rule – never invent features or outcomes not present in the roadmap. Every view must be grounded in what\'s actually there.',
                 },
                 {
                   label: 'Audience-specific prompt injection',
@@ -123,11 +123,11 @@ export default function StakeholderLensCaseStudy() {
                 },
                 {
                   label: 'Parallel execution',
-                  detail: 'All selected audience calls fire simultaneously via Promise.allSettled. Partial failures are handled gracefully — if one view errors, the others still render. This keeps latency low and makes the tool feel responsive even with 4 simultaneous API calls.',
+                  detail: 'All selected audience calls fire simultaneously via Promise.allSettled. Partial failures are handled gracefully – if one view errors, the others still render. This keeps latency low and makes the tool feel responsive even with 4 simultaneous API calls.',
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -140,11 +140,11 @@ export default function StakeholderLensCaseStudy() {
               {[
                 {
                   label: 'One prompt per audience, not one prompt for all',
-                  detail: 'A single prompt generating all four views would be shorter to write but would produce generic output. Dedicated prompts allow each audience view to be genuinely tuned — the engineering view reads like engineering communication, not like a slightly modified exec brief.',
+                  detail: 'A single prompt generating all four views would be shorter to write but would produce generic output. Dedicated prompts allow each audience view to be genuinely tuned – the engineering view reads like engineering communication, not like a slightly modified exec brief.',
                 },
                 {
                   label: 'Parallel calls, not sequential',
-                  detail: 'Sequential API calls would make the tool feel slow — each view waiting for the last. Parallel calls via Promise.allSettled mean all views generate in the time it takes the slowest one. The visual result (all cards loading simultaneously) also feels more satisfying to use.',
+                  detail: 'Sequential API calls would make the tool feel slow – each view waiting for the last. Parallel calls via Promise.allSettled mean all views generate in the time it takes the slowest one. The visual result (all cards loading simultaneously) also feels more satisfying to use.',
                 },
                 {
                   label: 'Context-first prompt design',
@@ -152,11 +152,11 @@ export default function StakeholderLensCaseStudy() {
                 },
                 {
                   label: 'Server-side API key',
-                  detail: 'The Claude API key lives in a Vercel environment variable, proxied through a serverless function. Anyone can use the tool without needing their own key. This is how production AI tools are actually architected — the key stays server-side.',
+                  detail: 'The Claude API key lives in a Vercel environment variable, proxied through a serverless function. Anyone can use the tool without needing their own key. This is how production AI tools are actually architected – the key stays server-side.',
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -167,7 +167,7 @@ export default function StakeholderLensCaseStudy() {
             <h2 className="text-xl font-semibold text-white mb-4">What It Demonstrates</h2>
             <div className="grid sm:grid-cols-3 gap-4">
               {[
-                { label: 'PM communication depth', detail: 'The tool encodes how roadmap communication actually differs across audiences — not a generic reformatter, but a reflection of real stakeholder dynamics' },
+                { label: 'PM communication depth', detail: 'The tool encodes how roadmap communication actually differs across audiences – not a generic reformatter, but a reflection of real stakeholder dynamics' },
                 { label: 'LLM API work', detail: 'Parallel prompt execution, context injection, structured system/user prompt separation, error handling at the individual call level' },
                 { label: 'Delivery judgment', detail: 'Architecture tradeoffs that reflect production thinking: parallel vs. sequential, prompt separation vs. consolidation, server-side key management' },
               ].map((item, i) => (

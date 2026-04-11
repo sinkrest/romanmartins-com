@@ -92,7 +92,7 @@ export default function Hero() {
               className="text-white/55 text-lg leading-relaxed mb-10 max-w-xl"
               style={{ animation: 'fadeUp 0.5s 0.3s ease forwards', opacity: 0 }}
             >
-              10 years inside manufacturing operations — LEGO, industrial equipment,
+              10 years inside manufacturing operations – LEGO, industrial equipment,
               global teams. Now I build AI tools in production: Claude agents, prompt
               architectures, shipped products. The rare bridge between factory-floor
               reality and AI implementation.

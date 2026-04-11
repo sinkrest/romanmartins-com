@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Opportunity Scanner — Case Study | Roman Martins',
-  description: 'How I built a two-phase AI tool that maps where a company should use AI — generating a ranked opportunity list and executive brief from a single guided form input.',
+  title: 'AI Opportunity Scanner – Case Study | Roman Martins',
+  description: 'How I built a two-phase AI tool that maps where a company should use AI – generating a ranked opportunity list and executive brief from a single guided form input.',
 }
 
 export default function AiOpportunityScannerCaseStudy() {
@@ -70,14 +70,14 @@ export default function AiOpportunityScannerCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">The Problem</h2>
             <p>
-              &ldquo;We want to use AI&rdquo; is where most AI conversations begin — and stall. Companies know they should
+              &ldquo;We want to use AI&rdquo; is where most AI conversations begin – and stall. Companies know they should
               be doing something with AI. They don&apos;t know where to start, what to prioritise, or how to separate
               quick wins from longer bets. The result is either analysis paralysis or a scatter-shot approach that
               produces no meaningful results.
             </p>
             <p className="mt-4">
               Before you can scope an AI implementation (what to build), you need an opportunity map (where to play).
-              This is the strategic layer that precedes the technical one — and it&apos;s the deliverable that&apos;s
+              This is the strategic layer that precedes the technical one – and it&apos;s the deliverable that&apos;s
               traditionally produced after expensive consultant workshops. I wanted to build a tool that produces it
               in under three minutes.
             </p>
@@ -86,15 +86,15 @@ export default function AiOpportunityScannerCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">What I Built</h2>
             <p>
-              A two-phase tool that takes a guided form input — company description, time-consuming tasks, current tools,
-              primary goal, AI maturity — and produces a ranked opportunity map plus a full executive brief.
+              A two-phase tool that takes a guided form input – company description, time-consuming tasks, current tools,
+              primary goal, AI maturity – and produces a ranked opportunity map plus a full executive brief.
             </p>
             <div className="mt-6 glass-card rounded-xl p-6 space-y-3">
               {[
                 { step: '01', text: 'User fills a structured 5-field form (company, tasks, tools, goal, AI maturity)' },
                 { step: '02', text: 'Phase 1: Claude returns a JSON array of 5–8 opportunities, each with title, category, tier, impact, effort, time-to-value, AI type, and tool recommendations' },
                 { step: '03', text: 'Opportunities rendered as cards split into Quick Wins (≤4 weeks) and Strategic Bets' },
-                { step: '04', text: 'Phase 2: Claude generates a full executive brief — summary, where to start, deep-dives on top 3, risks, 90-day roadmap' },
+                { step: '04', text: 'Phase 2: Claude generates a full executive brief – summary, where to start, deep-dives on top 3, risks, 90-day roadmap' },
                 { step: '05', text: 'Output is copyable and cross-links to the AI Scoping Tool for deep-diving on specific opportunities' },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-3">
@@ -108,17 +108,17 @@ export default function AiOpportunityScannerCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">Prompt Architecture</h2>
             <p>
-              Two calls with opposite output styles — structured first, narrative second.
+              Two calls with opposite output styles – structured first, narrative second.
             </p>
             <ul className="mt-5 space-y-4">
               {[
                 {
                   label: 'Opportunity list prompt (Phase 1)',
-                  detail: 'Returns a strict JSON array with a defined schema per object. Strong schema instruction — specific field names, allowed values for tier/impact/effort, tool specificity requirements. The UI parses this to render interactive cards with colour-coded ratings before the full brief is ready. Structured output enables a richer visual result.',
+                  detail: 'Returns a strict JSON array with a defined schema per object. Strong schema instruction – specific field names, allowed values for tier/impact/effort, tool specificity requirements. The UI parses this to render interactive cards with colour-coded ratings before the full brief is ready. Structured output enables a richer visual result.',
                 },
                 {
                   label: 'Executive brief prompt (Phase 2)',
-                  detail: 'Takes the form context plus a summary of the JSON opportunities as input. System prompt acts as a senior AI strategy consultant producing an executive brief — with explicit structure: summary, where to start, opportunity deep-dives, risks, 90-day roadmap. Runs in parallel with the card render.',
+                  detail: 'Takes the form context plus a summary of the JSON opportunities as input. System prompt acts as a senior AI strategy consultant producing an executive brief – with explicit structure: summary, where to start, opportunity deep-dives, risks, 90-day roadmap. Runs in parallel with the card render.',
                 },
                 {
                   label: 'JSON parsing resilience',
@@ -126,7 +126,7 @@ export default function AiOpportunityScannerCaseStudy() {
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -143,7 +143,7 @@ export default function AiOpportunityScannerCaseStudy() {
                 },
                 {
                   label: 'Quick Wins vs. Strategic Bets framework',
-                  detail: 'The tier split is encoded in the prompt schema — not left to Claude to decide ad hoc. Quick Win = Low/Medium effort + visible value within 4 weeks. Strategic Bet = transformational but longer runway. This forces a concrete, actionable output rather than a list of generic recommendations. The framework maps directly to how leadership teams prioritise AI investment.',
+                  detail: 'The tier split is encoded in the prompt schema – not left to Claude to decide ad hoc. Quick Win = Low/Medium effort + visible value within 4 weeks. Strategic Bet = transformational but longer runway. This forces a concrete, actionable output rather than a list of generic recommendations. The framework maps directly to how leadership teams prioritise AI investment.',
                 },
                 {
                   label: 'Guided form, not a freetext prompt',
@@ -151,11 +151,11 @@ export default function AiOpportunityScannerCaseStudy() {
                 },
                 {
                   label: 'Cross-link to Scoping Tool',
-                  detail: 'The output footer links to the AI Scoping Tool — the natural next step for any opportunity worth pursuing. The two tools are designed as a workflow: Scanner identifies where to play, Scoping Tool plans how to win. This creates a coherent demonstration of the full AI implementation engagement process.',
+                  detail: 'The output footer links to the AI Scoping Tool – the natural next step for any opportunity worth pursuing. The two tools are designed as a workflow: Scanner identifies where to play, Scoping Tool plans how to win. This creates a coherent demonstration of the full AI implementation engagement process.',
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -170,9 +170,9 @@ export default function AiOpportunityScannerCaseStudy() {
             </p>
             <div className="mt-6 space-y-3">
               {[
-                { tool: 'AI Opportunity Scanner', role: 'Identify — where should we use AI?', href: '/projects/ai-opportunity-scanner', current: true },
-                { tool: 'AI Implementation Scoping Tool', role: 'Scope — how do we implement the best opportunity?', href: '/projects/ai-scoping-tool', current: false },
-                { tool: 'AI Discovery Simulator', role: 'Validate — do real users need what we\'re building?', href: '/projects/ai-discovery-simulator', current: false },
+                { tool: 'AI Opportunity Scanner', role: 'Identify – where should we use AI?', href: '/projects/ai-opportunity-scanner', current: true },
+                { tool: 'AI Implementation Scoping Tool', role: 'Scope – how do we implement the best opportunity?', href: '/projects/ai-scoping-tool', current: false },
+                { tool: 'AI Discovery Simulator', role: 'Validate – do real users need what we\'re building?', href: '/projects/ai-discovery-simulator', current: false },
               ].map((item, i) => (
                 <div key={i} className={`glass-card rounded-xl p-4 border flex items-center justify-between gap-4 ${item.current ? 'border-indigo-500/20' : 'border-white/[0.04]'}`}>
                   <div>

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Product Discovery Simulator — Case Study | Roman Martins',
-  description: 'How I built a 4-phase AI tool that simulates product discovery interviews — generating user personas, conducting interviews, and synthesising an opportunity brief using the Claude API.',
+  title: 'AI Product Discovery Simulator – Case Study | Roman Martins',
+  description: 'How I built a 4-phase AI tool that simulates product discovery interviews – generating user personas, conducting interviews, and synthesising an opportunity brief using the Claude API.',
 }
 
 export default function AiDiscoverySimulatorCaseStudy() {
@@ -76,7 +76,7 @@ export default function AiDiscoverySimulatorCaseStudy() {
             </p>
             <p className="mt-4">
               The insight: LLMs can simulate the early stages of discovery well enough to be genuinely useful.
-              Not as a replacement for real users — but as a way to stress-test assumptions before investing in
+              Not as a replacement for real users – but as a way to stress-test assumptions before investing in
               real research. Think of it as a structured thought experiment, conducted by AI, that surfaces the
               questions worth actually going out and answering.
             </p>
@@ -85,15 +85,15 @@ export default function AiDiscoverySimulatorCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">What I Built</h2>
             <p>
-              A 4-phase discovery simulation that takes a product idea from assumption to structured opportunity brief —
+              A 4-phase discovery simulation that takes a product idea from assumption to structured opportunity brief –
               entirely through AI-simulated interviews.
             </p>
             <div className="mt-6 glass-card rounded-xl p-6 space-y-3">
               {[
                 { step: '01', text: 'User describes a product idea or problem they want to explore' },
-                { step: '02', text: 'Claude generates 3 distinct user personas as structured JSON — each with role, pain points, goals, and context' },
+                { step: '02', text: 'Claude generates 3 distinct user personas as structured JSON – each with role, pain points, goals, and context' },
                 { step: '03', text: 'User interviews each persona: asks a question, the persona responds in character with nuanced, realistic answers' },
-                { step: '04', text: 'Follow-up questions supported — each persona maintains its perspective across the conversation thread' },
+                { step: '04', text: 'Follow-up questions supported – each persona maintains its perspective across the conversation thread' },
                 { step: '05', text: 'All interview data synthesised into an opportunity brief: validated insights, unresolved tensions, PM recommendation, confidence score' },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-3">
@@ -113,7 +113,7 @@ export default function AiDiscoverySimulatorCaseStudy() {
               {[
                 {
                   label: 'Persona generation',
-                  detail: 'Returns a JSON array of 3 persona objects — each with name, role, age, context, goals, and pain points. Structured output means the UI can render rich persona cards immediately, not parse free-form text.',
+                  detail: 'Returns a JSON array of 3 persona objects – each with name, role, age, context, goals, and pain points. Structured output means the UI can render rich persona cards immediately, not parse free-form text.',
                 },
                 {
                   label: 'Interview response',
@@ -125,11 +125,11 @@ export default function AiDiscoverySimulatorCaseStudy() {
                 },
                 {
                   label: 'Opportunity brief synthesis',
-                  detail: 'All interview transcripts passed to Claude as a single context block. System prompt instructs it to act as a senior PM synthesising research — identifying validated insights, tensions between personas, open questions, and a clear recommendation with a confidence score.',
+                  detail: 'All interview transcripts passed to Claude as a single context block. System prompt instructs it to act as a senior PM synthesising research – identifying validated insights, tensions between personas, open questions, and a clear recommendation with a confidence score.',
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -142,7 +142,7 @@ export default function AiDiscoverySimulatorCaseStudy() {
               {[
                 {
                   label: 'Separate call per interview response',
-                  detail: 'An alternative: generate all interview responses upfront. More efficient — but it removes the user from the loop. Making the user formulate their own questions is part of the tool\'s value: it forces PM thinking, not just AI consumption.',
+                  detail: 'An alternative: generate all interview responses upfront. More efficient – but it removes the user from the loop. Making the user formulate their own questions is part of the tool\'s value: it forces PM thinking, not just AI consumption.',
                 },
                 {
                   label: 'Free-form questions, not preset ones',
@@ -154,11 +154,11 @@ export default function AiDiscoverySimulatorCaseStudy() {
                 },
                 {
                   label: 'Confidence score in the brief',
-                  detail: 'The opportunity brief includes an explicit confidence score (High / Medium / Low) from the AI. This frames the output correctly: it\'s a hypothesis sharpening tool, not a research substitute. A PM who mistakes simulated confidence for real validation is using it wrong — the score makes that explicit.',
+                  detail: 'The opportunity brief includes an explicit confidence score (High / Medium / Low) from the AI. This frames the output correctly: it\'s a hypothesis sharpening tool, not a research substitute. A PM who mistakes simulated confidence for real validation is using it wrong – the score makes that explicit.',
                 },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -169,7 +169,7 @@ export default function AiDiscoverySimulatorCaseStudy() {
             <h2 className="text-xl font-semibold text-white mb-4">What It Demonstrates</h2>
             <div className="grid sm:grid-cols-3 gap-4">
               {[
-                { label: 'Multi-agent design', detail: 'Four coordinated Claude calls, each with a distinct role — persona designer, interviewee, follow-up responder, PM synthesiser' },
+                { label: 'Multi-agent design', detail: 'Four coordinated Claude calls, each with a distinct role – persona designer, interviewee, follow-up responder, PM synthesiser' },
                 { label: 'PM methodology encoded', detail: 'The tool structure reflects how discovery actually works: generate hypotheses → test with users → synthesise → decide' },
                 { label: 'State management', detail: 'Persona context, interview history, and follow-up threads all managed in a single state object across 4+ API calls' },
               ].map((item, i) => (

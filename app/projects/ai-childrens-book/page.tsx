@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI Children\'s Book Platform — Case Study | Roman Martins',
-  description: 'How I built an AI-powered personalised children\'s book platform that sold 1,000+ books in Germany — using ChatGPT, DALL-E, and Midjourney with D2C print-on-demand fulfilment.',
+  title: 'AI Children\'s Book Platform – Case Study | Roman Martins',
+  description: 'How I built an AI-powered personalised children\'s book platform that sold 1,000+ books in Germany – using ChatGPT, DALL-E, and Midjourney with D2C print-on-demand fulfilment.',
 }
 
 export default function AiChildrensBookCaseStudy() {
@@ -64,21 +64,21 @@ export default function AiChildrensBookCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">The Problem</h2>
             <p>
-              Every child deserves to be the hero of their own story — not just a name swapped into a generic template,
+              Every child deserves to be the hero of their own story – not just a name swapped into a generic template,
               but a book built around <em className="text-white/80">them</em>: their look, their personality, the challenges they&apos;re navigating.
               Yet truly personalised children&apos;s books didn&apos;t exist at scale. Custom illustration was expensive and slow.
               Generic personalisation was shallow and kids saw through it.
             </p>
             <p className="mt-4">
               The core insight was pedagogical: children process difficult situations more effectively when they can observe
-              themselves navigating the same challenge from a safe, story-based distance. The book becomes a tool — not just entertainment.
+              themselves navigating the same challenge from a safe, story-based distance. The book becomes a tool – not just entertainment.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">What We Built</h2>
             <p>
-              A direct-to-consumer platform where parents submitted a personalised request through a web app — details about
+              A direct-to-consumer platform where parents submitted a personalised request through a web app – details about
               their child, their appearance, personality traits, and situations they were working through. The platform then
               generated a complete illustrated book featuring the child as the protagonist, facing and overcoming a relevant challenge.
             </p>
@@ -101,19 +101,19 @@ export default function AiChildrensBookCaseStudy() {
           <section>
             <h2 className="text-xl font-semibold text-white mb-4">My Role: AI Product Owner</h2>
             <p>
-              I owned the product end to end — not as an engineer, but as the person responsible for making the AI system
+              I owned the product end to end – not as an engineer, but as the person responsible for making the AI system
               produce a consistent, high-quality product at scale.
             </p>
             <ul className="mt-5 space-y-3">
               {[
-                { label: 'Prompt architecture', detail: 'Designed the story generation system (ChatGPT) — structured to accept variable child inputs and produce narratively coherent, age-appropriate stories' },
+                { label: 'Prompt architecture', detail: 'Designed the story generation system (ChatGPT) – structured to accept variable child inputs and produce narratively coherent, age-appropriate stories' },
                 { label: 'Visual consistency system', detail: 'Engineered the character generation pipeline using DALL-E, establishing a method for producing a consistent child character across multiple scenes' },
                 { label: 'Scenery and composition', detail: 'Used Midjourney for high-quality backgrounds, then composited character into scene' },
                 { label: 'Quality curation', detail: 'Reviewed and selected outputs, building judgement on what made a book feel premium vs. generic' },
                 { label: 'Product flow design', detail: 'Defined the approval workflow and digital-to-print handoff process' },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-indigo-400 shrink-0 mt-0.5">—</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">–</span>
                   <span className="text-sm"><span className="text-white/80 font-medium">{item.label}:</span> {item.detail}</span>
                 </li>
               ))}
@@ -128,16 +128,16 @@ export default function AiChildrensBookCaseStudy() {
             </p>
             <p className="mt-4">
               Early AI image models weren&apos;t built for this. Each generation produced a slightly different version of the
-              character — different face shape, hair tone, proportions. At volume, this broke the sense of a coherent narrative.
+              character – different face shape, hair tone, proportions. At volume, this broke the sense of a coherent narrative.
             </p>
             <p className="mt-4">
-              <span className="text-white/80 font-medium">How we solved it:</span> Developed a character archetype strategy —
+              <span className="text-white/80 font-medium">How we solved it:</span> Developed a character archetype strategy –
               identifying refined character descriptions that could be consistently reproduced across generations. Children with
               similar characteristics were mapped to a calibrated archetype prompt, maintaining visual consistency without
               generating entirely unique characters for every book.
             </p>
             <p className="mt-4">
-              The trade-off was depth of customisation vs. production consistency. We leaned toward consistency — a coherent
+              The trade-off was depth of customisation vs. production consistency. We leaned toward consistency – a coherent
               book beats a maximally unique but visually inconsistent one.
             </p>
           </section>
@@ -164,13 +164,13 @@ export default function AiChildrensBookCaseStudy() {
               composite manually. This was the main production bottleneck.
             </p>
             <p className="mt-4">
-              Today I&apos;d design the pipeline to generate character <em className="text-white/80">within</em> the scene in a single pass —
+              Today I&apos;d design the pipeline to generate character <em className="text-white/80">within</em> the scene in a single pass –
               using fine-tuned character models to embed the child directly into the environment. This would cut manual layout
               time significantly and improve compositional quality.
             </p>
             <p className="mt-4">
-              The story generation I&apos;d also rebuild as a structured multi-agent pipeline — one agent for narrative structure,
-              one for age-appropriate language, one for scene-by-scene illustration briefs — rather than a single monolithic prompt.
+              The story generation I&apos;d also rebuild as a structured multi-agent pipeline – one agent for narrative structure,
+              one for age-appropriate language, one for scene-by-scene illustration briefs – rather than a single monolithic prompt.
             </p>
           </section>
 

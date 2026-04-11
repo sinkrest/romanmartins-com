@@ -14,7 +14,7 @@ const timeline = [
     role: 'AI Product Lead & Founder',
     company: 'Dasbinjaich.de / Unlimited Art Agency',
     description:
-      'Led product strategy for a personalised AI-powered publishing platform. Built end-to-end AI workflows, prompt architectures, and QA systems — scaling to 1,000+ books produced. Also ran an AI automation agency building custom GPT-based systems for business clients.',
+      'Led product strategy for a personalised AI-powered publishing platform. Built end-to-end AI workflows, prompt architectures, and QA systems – scaling to 1,000+ books produced. Also ran an AI automation agency building custom GPT-based systems for business clients.',
     tags: ['AI Products', 'Entrepreneurship', 'LLM Integration'],
   },
   {
@@ -64,14 +64,14 @@ export default function About() {
           </h2>
           <p className="text-white/50 text-lg max-w-2xl leading-relaxed">
             Most AI PMs come from software. I came from factories. 10 years engineering complex
-            industrial products, then 4 years building AI in production. That intersection is rare —
+            industrial products, then 4 years building AI in production. That intersection is rare –
             and it&apos;s where the hardest AI problems actually live.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-5 gap-16">
 
-          {/* Timeline — 3 cols */}
+          {/* Timeline – 3 cols */}
           <div className="lg:col-span-3">
             <h3 className="text-sm font-medium text-white/40 uppercase tracking-widest mb-10">Career Arc</h3>
             <div className="relative">
@@ -107,7 +107,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Tools + differentiators — 2 cols */}
+          {/* Tools + differentiators – 2 cols */}
           <div className="lg:col-span-2 space-y-10">
 
             {/* What makes me different */}
@@ -118,7 +118,7 @@ export default function About() {
                   {
                     icon: '🏭',
                     title: 'Industrial credibility',
-                    desc: "I've shipped products that run on factory floors. I know what AI has to survive in the real world — not just demos.",
+                    desc: "I've shipped products that run on factory floors. I know what AI has to survive in the real world – not just demos.",
                   },
                   {
                     icon: '🤖',
@@ -133,7 +133,7 @@ export default function About() {
                   {
                     icon: '📐',
                     title: 'Small team mentality',
-                    desc: "Most effective when everyone ships. No committees, no handoffs — just people who own things end to end.",
+                    desc: "Most effective when everyone ships. No committees, no handoffs – just people who own things end to end.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-3 p-4 rounded-xl border border-white/[0.05] hover:border-white/[0.1] bg-white/[0.02] transition-all duration-200">

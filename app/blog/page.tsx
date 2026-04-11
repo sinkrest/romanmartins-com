@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { getAllPosts } from '@/lib/posts'
 
 export const metadata = {
-  title: 'Blog — Roman Martins',
+  title: 'Blog – Roman Martins',
   description: 'Thinking out loud about building things in a time when the tools are changing faster than anyone can document.',
 }
 

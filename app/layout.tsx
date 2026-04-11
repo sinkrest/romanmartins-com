@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Roman Martins — Product Manager & Builder',
+  title: 'Roman Martins – Product Manager & Builder',
   description: 'Product Manager and engineer. 10+ years building complex systems at LEGO, founding startups, and leading product teams. Ships working software, not slide decks.',
   keywords: ['Product Manager', 'PM', 'Engineer', 'Builder', 'AI', 'remote', 'Roman Martins'],
   authors: [{ name: 'Roman Martins' }],
   openGraph: {
-    title: 'Roman Martins — Product Manager & Builder',
+    title: 'Roman Martins – Product Manager & Builder',
     description: 'Product Manager. Engineer. Builder.',
     url: 'https://romanmartins.com',
     siteName: 'Roman Martins',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roman Martins — Product Manager & Builder',
+    title: 'Roman Martins – Product Manager & Builder',
     description: 'Product Manager. Engineer. Builder.',
   },
   metadataBase: new URL('https://romanmartins.com'),

@@ -7,7 +7,7 @@ const heroProjects = [
     statusColor: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
     title: 'Personalised Children\'s Book Platform',
     description:
-      'End-to-end AI product. Parents input a child\'s name and theme — the platform generates a personalised story with AI-illustrated pages and routes it through print-on-demand fulfilment for physical delivery.',
+      'End-to-end AI product. Parents input a child\'s name and theme – the platform generates a personalised story with AI-illustrated pages and routes it through print-on-demand fulfilment for physical delivery.',
     role: 'Founder & Product Lead',
     outcome: '1,000+ books sold in Germany. Full lifecycle: idea → AI pipeline → fulfilment → revenue.',
     tags: ['LLM Integration', 'Product Design', 'Automation', 'Print-on-demand'],
@@ -23,27 +23,27 @@ const heroProjects = [
     id: 2,
     status: 'Live',
     statusColor: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-    title: 'Ghost PM Signal — PM Intelligence Dashboard',
+    title: 'Downtime Cost Calculator',
     description:
-      'Live PM intelligence for Ghost product decisions. Aggregates Ghost Forum feature votes (880+ topics), GitHub issues, ActivityPub strategic signals, HN community sentiment, and Kit competitor changelog — synthesised by Claude into a four-part PM decision brief.',
+      'Built for ops leaders who lose money every minute a production line is down. Input revenue figures and incident history – get real-time cost-per-minute of downtime, annual risk exposure, and a monitoring ROI breakdown with AI-generated executive insight.',
     role: 'Designer & Builder',
-    outcome: 'An experiment in automated PM intelligence — turns 7 live data sources into a structured weekly decision brief using Claude.',
-    tags: ['Claude API', 'Multi-source Aggregation', 'PM Tooling', 'Vercel'],
-    accentFrom: 'from-emerald-500',
-    accentTo: 'to-green-600',
-    icon: '◉',
-    link: 'https://github.com/sinkrest/ghost-pm-signal',
-    sampleLink: 'https://ghost-pm-signal.vercel.app',
+    outcome: 'Turns scattered incident data into a business case for monitoring investment – the conversation ops teams actually need to have with leadership.',
+    tags: ['Claude API', 'Manufacturing Ops', 'Cost Modelling', 'Vercel'],
+    accentFrom: 'from-amber-500',
+    accentTo: 'to-orange-600',
+    icon: '⏱',
+    link: 'https://github.com/sinkrest/uptime-calculator',
+    sampleLink: 'https://uptime-calculator-lime.vercel.app',
     sampleLabel: 'Live Demo →',
-    caseStudyLink: '/projects/ghost-pm-signal',
+    caseStudyLink: null,
   },
   {
     id: 3,
     status: 'Live',
     statusColor: 'text-sky-400 bg-sky-400/10 border-sky-400/20',
-    title: 'Stakeholder Lens — AI Roadmap Translator',
+    title: 'Stakeholder Lens – AI Roadmap Translator',
     description:
-      'Paste your roadmap once. Get four audience-specific views — engineering, sales, exec, and customers — in seconds. Each view uses a distinct prompt architecture tuned to what that audience actually needs to hear.',
+      'Paste your roadmap once. Get four audience-specific views – engineering, sales, exec, and customers – in seconds. Built for product leaders who present the same plan to factory engineers on Monday and the C-suite on Friday. Each view uses a distinct prompt architecture tuned to what that audience actually needs to hear.',
     role: 'Designer & Builder',
     outcome: 'Eliminates hours of manual roadmap reformatting. Grounded in product context, not generic AI output.',
     tags: ['Claude API', 'Prompt Architecture', 'PM Tooling', 'Vercel'],
@@ -63,7 +63,7 @@ const heroProjects = [
     description:
       'Describe a business problem. Answer 3 AI-generated discovery questions. Get a structured implementation scope: recommended AI approach, process automation table, phased rollout, risks, success metrics.',
     role: 'Designer & Builder',
-    outcome: 'Full AI implementation scope generated in under 2 minutes — no login required.',
+    outcome: 'Full AI implementation scope generated in under 2 minutes – no login required.',
     tags: ['Claude API', 'Structured Output', 'Vanilla JS', 'Vercel'],
     accentFrom: 'from-indigo-500',
     accentTo: 'to-violet-600',
@@ -77,20 +77,20 @@ const heroProjects = [
 
 const alsoBuilt = [
   {
-    title: 'Downtime Cost Calculator',
-    description: 'Input revenue and incident data — get cost-per-minute of downtime, annual risk exposure, and monitoring ROI breakdown with AI executive insight.',
-    link: 'https://uptime-calculator-lime.vercel.app',
-    github: 'https://github.com/sinkrest/uptime-calculator',
+    title: 'Ghost PM Signal',
+    description: 'Live PM intelligence dashboard – aggregates 7 data sources (forum votes, GitHub, HN, competitor changelog) into a Claude-synthesised decision brief.',
+    link: 'https://ghost-pm-signal.vercel.app',
+    github: 'https://github.com/sinkrest/ghost-pm-signal',
   },
   {
     title: 'Opportunity Scanner',
-    description: 'Ranked map of opportunities — Quick Wins vs Strategic Bets, with effort, impact, and tool recommendations.',
+    description: 'Ranked map of opportunities – Quick Wins vs Strategic Bets, with effort, impact, and tool recommendations.',
     link: 'https://ai-opportunity-scanner.vercel.app',
     github: 'https://github.com/sinkrest/ai-opportunity-scanner',
   },
   {
     title: 'Product Discovery Simulator',
-    description: 'Generate user personas, run simulated interviews, receive a synthesised discovery brief — multi-agent, 4-phase flow.',
+    description: 'Generate user personas, run simulated interviews, receive a synthesised discovery brief – multi-agent, 4-phase flow.',
     link: 'https://ai-discovery-simulator.vercel.app',
     github: 'https://github.com/sinkrest/ai-discovery-simulator',
   },
@@ -110,7 +110,7 @@ export default function Portfolio() {
             Products I&apos;ve built
           </h2>
           <p className="text-white/45 text-lg max-w-xl">
-            Shipped products, not slide decks. Each project started with a real problem and ended with something working.
+            Each project started where software meets the physical world – and ended with something working.
           </p>
         </div>
 
@@ -201,7 +201,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* Roman's Lab — prominent CTA */}
+        {/* Roman's Lab – prominent CTA */}
         <div className="mt-16">
           <a
             href="https://sinkrest.github.io/romans-lab"
@@ -221,7 +221,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <p className="text-white/40 text-sm max-w-lg">
-                  The full collection — PM toolkit, Ghost Creator Suite, and everything else I&apos;ve shipped.
+                  The full collection – manufacturing ops tools, PM toolkit, and everything else I&apos;ve shipped.
                 </p>
               </div>
               <span className="text-white/20 group-hover:text-indigo-400 transition-colors text-2xl shrink-0 ml-6">

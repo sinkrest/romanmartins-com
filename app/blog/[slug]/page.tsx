@@ -11,7 +11,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug)
   if (!post) return {}
   return {
-    title: `${post.title} — Roman Martins`,
+    title: `${post.title} – Roman Martins`,
     description: post.excerpt,
   }
 }
@@ -39,7 +39,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         </div>
       </nav>
 
-      {/* Hero Banner — full width dark, O'Nolan style */}
+      {/* Hero Banner – full width dark, O'Nolan style */}
       <div className="pt-16">
         <div className="max-w-5xl mx-auto px-6 pt-8">
           <div
@@ -55,7 +55,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 `
               }}
             />
-            {/* Accent glow — indigo */}
+            {/* Accent glow – indigo */}
             <div
               className="absolute"
               style={{
@@ -67,7 +67,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 filter: 'blur(60px)',
               }}
             />
-            {/* Accent glow — purple */}
+            {/* Accent glow – purple */}
             <div
               className="absolute"
               style={{
@@ -94,7 +94,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* Author — circular photo overlapping banner bottom-left */}
+      {/* Author – circular photo overlapping banner bottom-left */}
       <div className="relative -mt-14 px-6 mb-6">
         <div className="max-w-3xl mx-auto flex items-end gap-4">
           <div className="w-[88px] h-[88px] rounded-full overflow-hidden border-[4px] border-[var(--bg)] flex-shrink-0 shadow-xl">
